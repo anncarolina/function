@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        function homens (a)
+        {
+            var peso
+            peso=(72.7*a)-58
+            return (peso)
+        }
+        function mulheres (a)
+        {
+            var peso
+            peso=(62.1*a)-44.7
+            return (peso)
+        }
+        var calcularPesoIdeal, alturaMulher, alturaHomem
+        calcularPesoIdeal=parseInt(prompt("Qual o seu sexo?\n1-homen\n2-mulher"))
+        switch (calcularPesoIdeal)
+        {
+            case 1:
+            alturaHomem=parseFloat(prompt("Digite sua altura:"))
+            pesoHom=homens(alturaHomem)
+            alert("Seu peso ideal é "+pesoHom)
+            break;
+
+            case 2:
+            alturaMulher=parseFloat(prompt("Digite sua altura:"))
+            pesoMul=mulheres(alturaMulher)
+            alert("Seu peso ideal é "+pesoMul)
+            break;
+        }
+    </script>
+</html>
